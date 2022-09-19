@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\controllers",
+    "\\routes",
+    "\\views",
+    "\\views\\ApplyVC",
+    "\\views\\auth",
+    "\\views\\partials"
+  ],
+  "SelectedNode": "\\routes\\applyVCRoutes.js",
+  "PreviewInSolutionExplorer": false
+}

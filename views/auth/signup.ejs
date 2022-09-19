@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/header.ejs') %> 
+<body>
+    <%- include('../partials/nav.ejs') %> 
+    <div class="blogs content">
+        <h2>Control your Data, Manage your Future</h2> 
+        <p>Sign up with your email, username or phone number</p>
+        <form action="/auth/signup" method="post">
+            <input name="username" placeholder="username"/>
+            <input name="password" placeholder="password"/>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <%- include('../partials/footer.ejs') %> 
+</body>
+</html>

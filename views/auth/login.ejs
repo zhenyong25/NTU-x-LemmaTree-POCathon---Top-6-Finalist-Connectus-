@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/header.ejs') %> 
+<body>
+    
+    <div class="blogs content">
+        <h2>Control your Data, Manage your Future</h2> 
+        <form action="/auth/login" method="post">
+            <input name="username" placeholder="username"/>
+            <input name="password" placeholder="password"/>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <%- include('../partials/footer.ejs') %> 
+</body>
+</html>

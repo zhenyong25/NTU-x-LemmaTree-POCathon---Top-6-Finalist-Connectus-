@@ -1,0 +1,15 @@
+<nav>
+  <div class="site-title">
+    <a href="/"><h1>Connectus</h1></a>
+  </div>
+  <ul>
+    <% if (loggedIn) { %>
+      <li><a href="/assets">My Assets</a></li>
+      <li><a href="/wallets/create">Create New Job</a></li>
+  <li><a href="/apply/applyVC">Apply Verified Credentials</a></li>
+      <li><a href="/auth/logout">Logout</a></li>
+    <% } else { %>
+      <li><a href="/auth/login">Login</a></li>
+    <% } %>
+  </ul>
+</nav>

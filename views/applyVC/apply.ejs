@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/header.ejs') %> 
+<body>
+    <%- include('../partials/nav.ejs') %>
+    <div class="blogs content">
+        <h2>Apply for your Verified Credentials(VC) now</h2> 
+        <form action="/apply/createVC" method="post">
+            <input name="firstName" placeholder="First Name"/>
+            <input name="lastName" placeholder="Last Name"/>
+            <input name="email" placeholder="Email Address"/>
+            <input name="country" placeholder="Country"/>
+            <input name="organizationName" placeholder="Organization Name"/>
+            <select name="typeVC">
+                <option value="AccountCredentialPersonV1">User Account Credential</option>
+                <option value="AccountCredentialOrganizationV1">Company Account Credential</option>
+                <option value="EducationCredentialPersonV1">Education Credential</option>
+            </select>
+            <input name="issuanceDate" placeholder="Date of Issuance"/>
+            <input type="file" name="document"/>
+            <button type="submit">Apply VC</button>
+        </form>
+    </div>
+
+    <%- include('../partials/footer.ejs') %> 
+</body>
+</html>
